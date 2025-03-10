@@ -1,0 +1,90 @@
+
+
+
+.add {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-img-upload {
+    text-align: center;
+}
+
+.add-img-upload p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.add-img-upload label {
+    cursor: pointer;
+}
+
+.add-img-upload img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px dashed #4CAF50;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+input[type='text'],
+textarea,
+select,
+input[type='number'] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #4CAF50;
+}
+
+.add-category-price {
+    display: flex;
+    gap: 20px;
+}
+
+.add-category,
+.add-price {
+    flex: 1;
+}
+
+.add-btn {
+    width: 100%;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.add-btn:hover {
+    background-color: #45a049;
+}

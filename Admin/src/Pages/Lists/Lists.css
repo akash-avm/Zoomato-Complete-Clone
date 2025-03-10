@@ -1,0 +1,97 @@
+/* General Styles */
+.list {
+    padding: 16px;
+    font-family: 'Inter', sans-serif;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.list p {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #222;
+}
+
+/* Table Styles */
+.list-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.list-table-format {
+    display: grid;
+    grid-template-columns: 60px 1fr 1fr 1fr 80px;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.list-table-format.title {
+    font-weight: 700;
+    background-color: #f7f7f7;
+    color: #222;
+    padding: 14px;
+}
+
+/* Image Styles */
+.list-table-format img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Text Styles */
+.list-table-format p {
+    margin: 0;
+    font-size: 16px;
+    color: #444;
+}
+
+/* Button Styles */
+.list-table-format button {
+    background: #ff3b3b;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.list-table-format button:hover {
+    background: #e60000;
+}
+
+/* No Data Message */
+.list .no-data {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .list-table-format {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        text-align: left;
+    }
+
+    .list-table-format img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .list-table-format button {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+}
